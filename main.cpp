@@ -133,9 +133,9 @@
            printf("\n");
 
            printf("sip : ");
-           printf("%s\n",inet_ntoa(ip->ip_src));
+           printf("%s\n",inet_ntop(ip->ip_src));
            printf("dip : ");
-           printf("%s\n",inet_ntoa(ip->ip_dst));
+           printf("%s\n",inet_ntop(ip->ip_dst));
 
            printf("tcp_sport : ");
            printf("%d\n",ntohs(tcp->th_sport));
